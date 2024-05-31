@@ -8,6 +8,10 @@ This repository contains a Laravel 11 template that comes pre-configured with au
 
 -   Bootstrap 4.6.1
 -   Fontawesome 5.15.4
+-   ChartJs 2.9.4
+-   Jquery 3.6.0
+-   Datatables 1.10.18
+-   Sweetalert 2.1.2
 -   etc
 
 ## Installation Guide
