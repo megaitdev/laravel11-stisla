@@ -28,7 +28,7 @@ This repository contains a Laravel 11 template that comes pre-configured with au
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/vickymaulana/laravel11-stisla.git
+    git clone https://github.com/megaitdev/laravel11-stisla.git
     ```
 
 2. Navigate into the project directory:
