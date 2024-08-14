@@ -9,8 +9,8 @@
             </div>
             <ul class="sidebar-menu">
                 <li class="menu-header">Dashboard</li>
-                <li class="{{ Request::is('home') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url('home') }}"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url('dashboard') }}"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                 </li>
                 <!-- profile ganti password -->
                 <li class="menu-header">Profile</li>
@@ -22,11 +22,7 @@
                     <a class="nav-link" href="{{ url('profile/change-password') }}"><i class="fas fa-key"></i> <span>Ganti
                             Password</span></a>
                 </li>
-                <li class="menu-header">Starter</li>
-                <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url('blank-page') }}"><i class="far fa-square"></i> <span>Blank
-                            Page</span></a>
-                </li>
+                <li class="menu-header">User</li>
             </ul>
         </aside>
     </div>

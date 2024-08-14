@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
+    public function profile()
+    {
+        return view('profile.profile', ['user' => Auth::user()]);
+    }
     public function edit()
     {
         return view('profile.edit', ['user' => Auth::user()]);
@@ -22,7 +26,7 @@ class ProfileController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
         ]);
-        return redirect()->route('profile.edit')->with('status', 'Profil Berhasil Di Update!');
+        return redirect()->route('profile-edit')->with('status', 'Profil Berhasil Di Update!');
     }
 
     public function changepassword()
