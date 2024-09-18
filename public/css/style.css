@@ -834,7 +834,6 @@ select.form-control:not([size]):not([multiple]) {
 .card .card-header h4 {
     font-size: 16px;
     line-height: 28px;
-    color: #6777ef;
     padding-right: 10px;
     margin-bottom: 0;
 }
@@ -954,23 +953,44 @@ select.form-control:not([size]):not([multiple]) {
 .card.card-primary {
     border-top: 2px solid #6777ef;
 }
+.card.card-primary .card-header h4 {
+    color: #6777ef;
+}
 .card.card-secondary {
     border-top: 2px solid #cdd3d8;
+}
+.card.card-secondary .card-header h4 {
+    color: #cdd3d8;
 }
 .card.card-success {
     border-top: 2px solid #47c363;
 }
+.card.card-success .card-header h4 {
+    color: #47c363;
+}
 .card.card-danger {
     border-top: 2px solid #fc544b;
+}
+.card.card-danger .card-header h4 {
+    color: #fc544b;
 }
 .card.card-warning {
     border-top: 2px solid #ffa426;
 }
+.card.card-warning .card-header h4 {
+    color: #ffa426;
+}
 .card.card-info {
     border-top: 2px solid #3abaf4;
 }
+.card.card-info .card-header h4 {
+    color: #3abaf4;
+}
 .card.card-dark {
     border-top: 2px solid #191d21;
+}
+.card.card-dark .card-header h4 {
+    color: #191d21;
 }
 .card.card-hero .card-header {
     padding: 40px;
