@@ -43,25 +43,35 @@ This repository contains a Laravel 11 template that comes pre-configured with au
     composer install
     ```
 
-4. Copy the `.env.example` file and rename it to `.env`:
+4. Edit Credential Information
+   Edit AuthenticatesUsers, on path vendor/laravel/ui/auth-backend/AuthenticatesUsers
+
+    ```php
+    public function username()
+    {
+        return 'username';
+    }
+    ```
+
+5. Copy the `.env.example` file and rename it to `.env`:
 
     ```bash
     cp .env.example .env
     ```
 
-5. Generate application key:
+6. Generate application key:
 
     ```bash
     php artisan key:generate
     ```
 
-6. Run database migrations:
+7. Run database migrations:
 
     ```bash
     php artisan migrate
     ```
 
-7. Install JavaScript dependencies & run vite:
+8. Install JavaScript dependencies & run vite:
 
     ```bash
     npm install
@@ -71,11 +81,7 @@ This repository contains a Laravel 11 template that comes pre-configured with au
     npm run dev
     ```
 
-8. Start the development server:
+9. Start the development server:
     ```bash
     php artisan serve
     ```
-
-## Author
-
--   **Vicky Maulana** - [GitHub](https://github.com/vickymaulana)
