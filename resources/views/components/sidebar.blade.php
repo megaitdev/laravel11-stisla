@@ -8,21 +8,14 @@
                 <a href="">MD</a>
             </div>
             <ul class="sidebar-menu">
-                <li class="menu-header">Dashboard</li>
-                <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
+                <li class="menu-header">Menu</li>
+                <li class="{{ $slug == 'dashboard' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url('dashboard') }}"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                 </li>
-                <!-- profile ganti password -->
-                <li class="menu-header">Profile</li>
-                <li class="{{ Request::is('profile/edit') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url('profile/edit') }}"><i class="far fa-user"></i>
+                <li class="{{ $slug == 'profile' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url('profile') }}"><i class="far fa-user"></i>
                         <span>Profile</span></a>
                 </li>
-                <li class="{{ Request::is('profile/change-password') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url('profile/change-password') }}"><i class="fas fa-key"></i> <span>Ganti
-                            Password</span></a>
-                </li>
-                <li class="menu-header">User</li>
             </ul>
         </aside>
     </div>

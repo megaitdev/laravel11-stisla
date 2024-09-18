@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="{{ asset('library/fontawesome/css/all.min.css') }}">
 
 
-    <!-- CSS Libraries -->
-    <link rel="stylesheet" href="{{ asset('library/selectric/public/selectric.css') }}">
 
 
     <!-- Template CSS -->
@@ -28,8 +26,8 @@
                     <div
                         class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
                         <div class="login-brand">
-                            <img src="{{ asset('img/stisla-fill.svg') }}" alt="logo" width="100"
-                                class="shadow-light rounded-circle">
+                            <img src="{{ asset('img/logo/mega-it.png') }}" alt="logo" width="100"
+                                class="shadow-primary rounded-circle">
                         </div>
 
                         <div class="card card-primary">
@@ -42,18 +40,18 @@
                                     @csrf
                                     <div class="row">
                                         <div class="form-group col-lg-6">
-                                            <label for="name">Name</label>
-                                            <input id="name" type="text"
-                                                class="form-control @error('name') is-invalid @enderror" name="name"
-                                                value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                            @error('name')
+                                            <label>Name</label>
+                                            <input id="nama" type="text"
+                                                class="form-control @error('nama') is-invalid @enderror" name="nama"
+                                                value="{{ old('nama') }}" required autocomplete="nama" autofocus>
+                                            @error('nama')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
                                         </div>
                                         <div class="form-group col-lg-6">
-                                            <label for="username">Username</label>
+                                            <label>Username</label>
                                             <input id="username" type="text"
                                                 class="form-control @error('username') is-invalid @enderror"
                                                 name="username" value="{{ old('username') }}" required
@@ -67,7 +65,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-lg-6">
-                                            <label for="email">Email</label>
+                                            <label>Email</label>
                                             <input id="email" type="email"
                                                 class="form-control @error('email') is-invalid @enderror" name="email"
                                                 value="{{ old('email') }}" required autocomplete="email">
@@ -78,7 +76,7 @@
                                             @enderror
                                         </div>
                                         <div class="form-group col-lg-6">
-                                            <label for="nomor_wa">Nomor WA</label>
+                                            <label>Nomor WA</label>
                                             <input id="nomor_wa" type="text"
                                                 class="form-control @error('nomor_wa') is-invalid @enderror"
                                                 name="nomor_wa" value="{{ old('nomor_wa') }}" required

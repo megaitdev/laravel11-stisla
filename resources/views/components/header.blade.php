@@ -11,17 +11,17 @@
         <li class="dropdown">
             @auth
                 <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}" class="rounded-circle mr-1">
+                    <img alt="image" src="{{ asset('img/profile/' . auth()->user()->picture) }}"
+                        class="rounded-circle mr-1">
                     <div class="d-sm-none d-lg-inline-block">
-                        {{ auth()->check() ? substr(auth()->user()->name, 0, 20) : 'Tamu' }}
+                        {{ auth()->check() ? substr(auth()->user()->nama, 0, 20) : 'Guest' }}
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-title">
-                        Selamat Datang, {{ auth()->check() ? substr(auth()->user()->name, 0, 20) : 'Tamu' }}
+                        Selamat Datang, {{ auth()->check() ? substr(auth()->user()->nama, 0, 20) : 'Guest' }}
                     </div>
-                    <a class="dropdown-item has-icon edit-profile" href="{{ url('profile') }}"
-                        data-id="{{ \Auth::id() }}">
+                    <a class="dropdown-item has-icon edit-profile" href="{{ url('profile') }}">
                         <i class="fa fa-user"></i> Edit Profile
                     </a>
                     <div class="dropdown-divider"></div>

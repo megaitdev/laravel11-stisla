@@ -8,11 +8,12 @@ class DashboardController extends Controller
 {
     public function dashboard()
     {
-        return view('dashboard');
-    }
-
-    public function blank()
-    {
-        return view('layouts.blank-page');
+        $data = [
+            'title' => 'Dashboard',
+            'slug' => 'dashboard',
+            'scripts' => ['js/custom.js'],
+            'csses' => ['css/custom.css']
+        ];
+        return view('dashboard', $data);
     }
 }
