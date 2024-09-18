@@ -47,10 +47,10 @@ This repository contains a Laravel 11 template that comes pre-configured with au
    Edit AuthenticatesUsers, on path vendor/laravel/ui/auth-backend/AuthenticatesUsers
 
     ```php
-        public function username()
-        {
-            return 'username';
-        }
+    public function username()
+    {
+        return 'username';
+    }
     ```
 
 5. Copy the `.env.example` file and rename it to `.env`:
