@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeaCukaiController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\Profile\ProfileController;
@@ -12,6 +13,8 @@ Route::get('/', function () {
 })->middleware('guest');
 
 Auth::routes();
+
+Route::get('get-data/{table}/{month}/{year}', [BeaCukaiController::class, 'getData']);
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard']);
