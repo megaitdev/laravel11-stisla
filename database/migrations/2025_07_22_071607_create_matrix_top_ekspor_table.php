@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::connection('mak_sd')->create('matrix_top_ekspor', function (Blueprint $table) {
+            $table->id();
+            $table->string('id_customer')->nullable();
+            $table->string('nama_customer')->nullable();
+            $table->string('zterm')->nullable();
+            $table->string('top')->nullable();
+            $table->string('produksi')->nullable();
+            $table->string('ekspor')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::connection('mak_sd')->dropIfExists('matrix_top_ekspor');
+    }
+};

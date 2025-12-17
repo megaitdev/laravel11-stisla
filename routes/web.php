@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BeaCukaiController;
+use App\Http\Controllers\BillingController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\Profile\ProfileController;
